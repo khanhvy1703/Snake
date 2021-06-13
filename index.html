@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=BioRhyme:wght@200&display=swap");
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        position: relative;
+        font-family: "BioRhyme", serif;
+        font-size: 16px;
+        line-height: 1.5;
+        background-color: rgb(1, 20, 31);
+        color: whitesmoke;
+      }
+
+      .container {
+        display: block;
+        max-width: 500px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 50px;
+      }
+
+      h3 {
+        margin: 0 0 1rem 0;
+      }
+
+      canvas {
+        border: 1px solid whitesmoke;
+      }
+
+      #reset {
+        margin: 0 0 1rem 0;
+        border: 2px solid whitesmoke;
+        width: 150px;
+        border-radius: 20px;
+        text-align: center;
+        font-weight: bolder;
+        float: right;
+      }
+
+      #reset:hover {
+        cursor: pointer;
+        background-color: whitesmoke;
+        color: rgb(1, 20, 31);
+        font-weight: bolder;
+      }
+
+      .row {
+        display: flex;
+      }
+
+      .column {
+        flex: 50%;
+      }
+    </style>
+
+    <title>Snake</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="column">
+          <h3>Score: <span id="score">0</span></h3>
+        </div>
+
+        <div class="column">
+          <div id="reset">PLAY AGAIN</div>
+        </div>
+      </div>
+
+      <canvas id="snakeGame" width="500" height="500"></canvas>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
