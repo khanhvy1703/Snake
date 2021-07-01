@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/style.css" />
+    <title>Snake</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="row">
+        <h3>Score: <span id="score">0</span></h3>
+        <div id="how" class="box">How to play</div>
+      </div>
+
+      <!-- How to play Modal -->
+      <div id="how-content">
+        <div class="content">
+          <span id="close">&times;</span>
+          <p>
+            &emsp;The users control the direction of the snake's head
+            <img src="/head.png" alt="snake's head" /> by using the arrows key
+            and make the snake eat the food <img src="/food.png" alt="food" />.
+            The users can't stop the snake while the game is in process.
+            <br />
+            &emsp;The snake's tail will grow up and be longer every time it eats
+            the food. The score will be increased by 1.
+            <br />
+            &emsp;However, there is a poison food
+            <img src="/poison.png" alt="poison" /> on the map. If the snake eats
+            the poison food, it will lose one tail and the score will be
+            decreased by 1.
+            <br />
+            &emsp;The game will be over if the snake eats itself or hits the
+            wall.
+          </p>
+        </div>
+      </div>
+
+      <!-- Canvas -->
+      <canvas id="snake" width="500" height="500"></canvas>
+
+      <!-- Play again button -->
+      <div id="reset" class="box">Play again</div>
+    </div>
+
+    <script src="/script.js"></script>
+  </body>
+</html>

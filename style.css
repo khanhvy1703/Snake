@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=BioRhyme:wght@200&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  position: relative;
+  font-family: "BioRhyme", serif;
+  font-size: 16px;
+  line-height: 1.7;
+  background-color: rgb(44, 63, 57);
+  color: whitesmoke;
+}
+
+.container {
+  display: block;
+  width: 504px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 50px;
+}
+
+h3 {
+  margin: 0 0 1rem 0;
+}
+
+#main {
+  padding-top: 40%;
+  text-align: center;
+  font-weight: bold;
+}
+
+.opt {
+  background-color: #f4f5f4; /* Green */
+  border: none;
+  color: rgb(14, 12, 12);
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.opt:hover {
+  cursor: pointer;
+  color: aliceblue;
+  background-color: rgb(48, 102, 58);
+}
+
+canvas {
+  border: 1px solid whitesmoke;
+}
+
+.box {
+  border: 2px solid whitesmoke;
+  width: 150px;
+  border-radius: 20px;
+  text-align: center;
+  font-weight: bolder;
+}
+
+.box:hover {
+  cursor: pointer;
+  background-color: whitesmoke;
+  color: rgb(1, 20, 31);
+  font-weight: bolder;
+}
+
+#reset {
+  margin: auto;
+}
+
+.row {
+  -moz-column-count: 2;
+  -moz-column-gap: 40%;
+  -webkit-column-count: 2;
+  -webkit-column-gap: 40%;
+  column-count: 2;
+  column-gap: 40%;
+}
+
+.visible {
+  display: none;
+}
+
+#how-content {
+  display: none; /* Hidden by default */
+  position: fixed;
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+  margin: auto;
+}
+
+.content {
+  background-color: rgb(44, 63, 57);
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 30px;
+  border: 3px solid #888;
+  width: 55%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+#close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+#close:hover,
+#close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
